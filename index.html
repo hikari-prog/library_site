@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css"/>
+  <link rel="stylesheet" href="asset/css/common.css">
+  <link rel="stylesheet" href="asset/css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet"/>
+  <title>千田こども図書館</title>
+</head>
+<body>
+  <header>
+    <header class="header">
+      <div class="header__area">
+        <div class="drower">
+          <div class="drower-btn">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+          </div>
+        </div>
+        <nav id="Nav">
+          <div class="header__logo"><h1><a href="../index.html"><img src="asset/img/icon.png" alt="東千田としょかん" /></a></h1></div>
+          <ul class="header__nav__pc">
+            <li><a href="about/about.html">としょかんについて</a></li>
+            <li><a href="info/info.html">おしらせ</a></li>
+            <li><a href="event/event.html">としょかんカレンダー</a></li>
+            <li><a href="qanda/qanda.html">お問い合わせ</a></li>
+          </ul>
+          <ul class="header__nav__sp">
+            <li><a href="about/about.html">としょかんについて</a></li>
+            <li><a href="info/info.html">おしらせ</a></li>
+            <li><a href="event/event.html">としょかんカレンダー</a></li>
+            <li><a href="qanda/qanda.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+        <section class="keyvisual__top">
+          <div class="wrap">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="slide-img">
+                    <img class="keyvisual__sp" src="asset/img/top_img/top_keyvisual_sp.jpg" alt="">
+                    <img class="keyvisual__pc" src="asset/img/top_img/top_keyvisual.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-img">
+                    <img class="keyvisual__sp" src="asset/img/top_img/sp3.jpg" alt="">
+                    <img class="keyvisual__pc" src="asset/img/top_img/4379137_m.jpg" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="slide-img">
+                    <img class="keyvisual__sp" src="asset/img/top_img/sp4.jpg" alt="">
+                    <img class="keyvisual__pc" src="asset/img/top_img/pc-m.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 class="keyvisual__inner__title">
+            <span>こどもとまなび、</span><span>こどもとはぐぐむ</span>
+          </h1>
+        </section>
+  </header>
+  <main class="main">
+    <section>
+      <hgroup  class="sec-open">
+        <h2 class="sec-open__h2">今日の開館時間</h2>
+        <span class="common-border">Open</span>
+        <p class="sec-open__inner">9:30〜20:00</p>
+      </hgroup>
+    </section>
+    
+    <!-- about -->
+    <section class="sec-about">
+      <h2 class="sec-about__h2"><span>ABOUT</span></h2>
+      <div class="sec-about__container">
+        <p>
+          千田こどもとしょかんは絵本の図書館です。みなさんが楽しく文章を読めるようにお手伝いをします。子どもも大人も居場所になるような場所に。<br />ぜひ一度のぞいてみてください。
+        </p>
+      </div>
+      <div class="sec-about__img">
+        <img class="sec-about__img-sp" src="asset/img/top_img/top_about.png" alt="" />
+        <img class="sec-about__img-pc" src="asset/img/top_img/top_about_sp.png" alt="" />
+      </div>
+    </section>
+
+    <!-- news -->
+    <div class="contents-wrap">
+      <section class="sec-news">
+        <h2 class="sec-news__h2"><span>NEWS</span></h2>
+        <div class="news__contents-category">
+          <ul>
+            <li>
+              <a href="">
+                <p class="news__contents-category--innner">ワークショップ<br/></p>
+                <time datetime="2023-07-25">2023.07.25<br/></time>
+                <div class="underline">
+                  <h3><span>絵本をつくろう</span></h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p class="news__contents-category--innner-blur">お知らせ<br/></p>
+                <time datetime="2023-07-15">2023.07.15<br/></time>
+                <div class="underline">
+                  <h3>
+                    <span>蔵書点検による<br />休館のおしらせ</span>
+                  </h3>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <p class="news__contents-category--innner">ワークショップ<br /></p>
+                <time datetime="2023-07-02">2023.07.02<br /></time>
+                <div class="underline">
+                  <h3><span>ブックトークをしよう</span></h3>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="common-btn">
+            <a href="info/info.html" class="common-btn__blue">もっと見る</a>
+          </div>
+        </section>
+        <section class="sec-calendar">
+          <h2 class="sec-calendar__h2"><span>としょかんカレンダー</span></h2>
+          <div class="sec-calendar__content">
+            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Asia%2FTokyo&src=aGlrYWtvcm9AZ21haWwuY29t&src=ZWRhNDE3ZDQxOWMwZDE5YjkyMzczODk3NmI1NmI2NmQzYTllMDg0OTQ2NTllYjY5YzdiNTllNDA0OWFiZGM3OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MWM0MDNlODZjZmFmMmU2MDI5YmVjZTM5NWFlOGM1NjJhMzMwMmVjMTk1OTcwMDg3Y2I0ZWQwZDBhMzIwYWFiZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NDk3ZWFhOTU4MWVhNmI5OTY0MWEyMWIwMWRkYmU2YjZlMDNhZDE2OGNmYmJhMjRlMDcwNGE5MGE5ODZjMTMxZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NjZlNTcwYmNkNTY0ZmE3ZGZlOTBiZTg4NmEwYmI2NDI3ZGZkMGIwMDIwODc2MmM1MTJjMWUxMTJkZTRhZGZjNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%237986CB&color=%234285F4&color=%23F6BF26&color=%237986CB&color=%23E67C73" style="border: solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <img class="footer-log" src="asset/img/icon.png" alt="" />
+      <div class="footer-detail">
+        <p class="footer-detail__tit">千田こども図書館</p>
+        <p class="footer-detail__info">〒730-0053 広島県広島市中区東千田町1丁目1<br/><a href="tel:000-929-4919">TEL:000-929-4919</a></p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swipeOption = {
+        loop: true,
+        effect: 'fade',
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        speed: 3000,
+        allowTouchMove: false,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+  }
+}
+new Swiper('.swiper-container', swipeOption);
+</script>
+<script src="asset/js/index.js"></script>
+</body>
+</html>
