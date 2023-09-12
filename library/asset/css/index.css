@@ -1,0 +1,341 @@
+/* header */
+.header__nav__pc {
+  display: none;
+}
+#Nav {
+  min-height: 8vh;
+  height: 200px;
+  background-color: white;
+}
+.header__nav__sp {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 100px 40px 60px 15px;
+  background-color: #93C178;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 99;
+  color: white;
+}
+.header__nav__sp li a {
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__nav__sp {
+    display: none;
+  }
+  .header {
+    display: flex;
+  }
+  .header__area {
+    background-color: white;
+    width: 320px;
+  }
+  #Nav {
+    display: block;
+  }
+  .header__nav__pc  {
+    display: block;
+    width: calc(100% - 30px);
+    font-size: 1.2rem;
+    line-height: 3rem;
+  }
+  .header__nav__pc li {
+    border-bottom: 1px solid #707070;
+  }
+  .header__nav__pc li:hover {
+    background-color: white;
+  }
+  .header__nav__pc li a {
+    color: #707070;
+  }
+  .header__logo {
+    width: 165px;
+    margin: auto;
+  }
+}
+/* ハンバーガーメニュー */
+.header__nav__sp.active {
+  visibility: initial;
+  opacity: 0.9;
+  pointer-events: auto;
+  top: 0;
+  height: auto;
+  transition: 0.5s;
+  width: auto;
+  line-height: 60px;
+  margin-top: 0;
+} 
+
+/* .keyvisual */
+.keyvisual__top {
+  aspect-ratio: 375/325;
+  background-color: #94C178;
+  position: relative;
+}
+.keyvisual__inner__title {
+  writing-mode: vertical-rl;
+  color: #FBF4E4;
+  white-space: nowrap;
+  padding-top: 50px;
+  max-width: 375px;
+  position: absolute;
+  top: 0;
+  right: 26px;
+  z-index: 9999;
+  background-color: #93C178;
+}
+.keyvisual__inner__title span{
+  display: block;
+  font-size: 20px;
+  letter-spacing: .7em;
+}
+.slide-img .keyvisual__pc {
+  display: none;
+}
+
+/* スライダー */
+.wrap{
+  padding: 16px;
+}
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+.swiper-container {
+  width: min(269px, calc((269 / 375) * 100vw));
+  aspect-ratio: 269/276;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+}
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img{
+  animation: zoomUp 10s linear 0s 1 normal both;  
+}
+.slide-img img{
+  display: block;
+}
+
+@media screen and (min-width: 1024px) {
+  .keyvisual__top {
+    width: calc(100% - 320px);
+    aspect-ratio: 1713/1074;
+  }
+  .slide-img .keyvisual__sp {
+    display: none;
+  }
+  .slide-img .keyvisual__pc {
+    display: block;
+  }
+  .swiper-container {
+    width: min(1325px, calc((1325 / 1980) * 100vw));
+    aspect-ratio: 1326/900;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+  }
+}
+
+
+
+/* sec-open */
+.sec-open {
+  text-align: center;
+  padding-top: 140px;
+}
+.sec-open__inner {
+  padding-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media screen and (min-width: 1024px) {
+  .sec-open, .common-border, .sec-open__inner {
+    font-size: 1.8rem;
+  }
+}
+
+/* about */
+.sec-about {
+  padding-top: 80px;
+}
+.sec-about__h2 {
+  color: #93C178;
+  font-weight: 600;
+  text-align: center;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.sec-about__h2 span {
+  border-bottom: 2px solid #707070;
+  padding-top: 10px;
+}
+.sec-about__img {
+  grid-column: 1 /2;
+  grid-row: 1 / 3;
+}
+.sec-about__img-sp {
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 220px;
+}
+.sec-about__img-pc {
+  display: none;
+}
+.sec-about p {
+  margin: 0 auto;
+  padding-top: 30px;
+  max-width: 280px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .sec-about__h2 span {
+    font-size: 1.8rem;
+  }
+  .sec-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    max-width: 580px;
+    margin: auto;
+  }
+  .sec-about__contener {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+  .sec-about__img-sp {
+    display: none;
+  }
+  .sec-about__img-pc {
+    display: block;
+  }
+}
+
+
+
+/* news */
+.sec-news {
+  padding-top: 60px;
+}
+.sec-news__h2 {
+  color: #93C178;
+  font-weight: 600;
+  text-align: center;
+}
+.sec-news__h2 span {
+  border-bottom: 2px solid #707070;
+  padding-top: 10px;
+}
+
+.news__contents-category  {
+  padding-top: 30px;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+}
+.news__contents-category ul {
+  margin-bottom: 80px;
+}
+.news__contents-category li {
+  padding-top: 20px;
+  display: flex;
+}
+
+.news__contents-category--innner {
+  color: #FBF4E4;
+  background-color: #EB4865;
+  width: 110px;
+  height: 35px;
+  font-size: 0.9rem;
+  padding: 5px 0;
+}
+.underline span {
+  border-bottom: 1px solid #707070;
+  color: #707070;
+}
+.news__contents-category--innner-blur {
+  color: #FBF4E4;
+  background-color: #68D2E3;
+  width: 110px;
+  height: 35px;
+  font-size: 0.9rem;
+  padding: 5px 0;
+}
+.news__contents-category time {
+  font-weight: 600;
+  padding-top: 10px;
+  color: #707070;
+}
+.news__contents-category ul li a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.arrow-right {
+  border-top: solid 2px #707070;
+  border-right: solid 2px #707070;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+}
+@media screen and (min-width: 1024px) {
+  .contents-wrap {
+    display: flex;
+    justify-content: space-around;
+  }
+  .sec-news__h2 span {
+    font-size: 1.8rem;
+  }
+  .sec-calendar iframe {
+    width: 500px;
+    height: 500px;
+  }
+}
+
+
+/* calendar */
+.sec-calendar {
+  padding-top: 80px;
+}
+.sec-calendar__h2 {
+  color: #93C178;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sec-calendar__h2 span {
+  border-bottom: 2px solid #707070;
+  padding-top: 10px;
+}
+.sec-calendar__content {
+  height: 260px;
+}
+.sec-calendar__content iframe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .sec-calendar__content iframe {
+    width: 500px;
+    height: 500px;
+  }
+}
+

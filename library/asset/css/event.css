@@ -1,0 +1,117 @@
+
+/* key-visual */
+.keyvisual__top {
+  height: 380px;
+  background-image: url(../img/event_img/event-keyvisual_sp.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .keyvisual__top {
+    height: 380px;
+    background-image: url(../img/event_img/event-keyvisual.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+/* about */
+.sec-calendar {
+  text-align: center;
+  padding-top: 30px;
+}
+.sec-calendar__h2 {
+  text-align: center;
+  padding-top: 60px;
+}
+
+
+.sec-calendar iframe {
+  height: 390px;
+  width: 320px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1024px) {
+  .sec-calendar iframe {
+    width: 940px;
+    height: 930px;
+  }
+}
+
+
+/* sec-event */
+.event-list__categories {
+  max-width: 320px;
+  margin: auto;
+  display: inline-grid;
+  padding-top: 60px;
+  gap: min(50px, calc((200 / 1920 ) * 100vw));
+}
+.event-list__categories-list {
+  position: relative;
+  padding-top: 80px;
+  background: white;
+}
+.event-list__categories-list figcaption {
+  padding-top: 20px;
+}
+.event-list__categories-yellow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 170px;
+  height: 55px;
+  line-height: 62px;
+  padding: 0 20px;
+  background-color: #F7EF6A;
+}
+.event-list__categories-red {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 170px;
+  height: 55px;
+  line-height: 62px;
+  padding: 0 20px;
+  background-color: #EB4865;
+  color: #FBF4E4;
+}
+.event-list__categories-blue {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 170px;
+  height: 55px;
+  line-height: 62px;
+  padding: 0 20px;
+  background-color: #465C8B;
+  color: #FBF4E4; 
+}
+
+
+@media screen and (min-width: 1024px) {
+  .event-list__categories {
+    display: flex;
+    gap: min(50px, calc((200 / 1920 ) * 100vw));
+    max-width: inherit;
+    padding-top: 80px;
+    justify-content: center
+  }
+  .event-list__categories-list {
+    width: 480px;
+    height: 380px;
+    padding-right: 20px;
+  }
+
+  .event-list__categories-yellow,
+  .event-list__categories-red,
+  .event-list__categories-blue {
+    width: 195px;
+    height: 60px;
+  }
+  
+}

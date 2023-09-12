@@ -1,0 +1,116 @@
+.keyvisual__top {
+  height: 380px;
+  background-image: url(../img/info_img/info-keyvisual_sp.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .keyvisual__top {
+    height: 380px;
+    background-image: url(../img/info_img/info-keyvisual.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+/*sec-info  */
+.sec-info {
+  padding-top: 60px;
+}
+.info-list {
+  padding: 0;
+}
+
+.info-list li {
+  background-color: #E9E7E7;
+  margin: auto;
+  list-style: none;
+  width: calc((290 / 375) * 100vw);
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .info-list li {
+    display: flex;
+    width: 890px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .info-list__category {
+    width: 195px;
+    height: 60px;
+    padding: 10px 20px;
+  }
+}
+.info-list__day-red {
+  color: #EB4865;
+  font-weight: bold;
+}
+.info-list__day-blue {
+  color: #68D2E3;
+  font-weight: bold;
+}
+.info-list__category {
+  display: block;
+  background-color: #EB4865;
+  width: 153px;
+  height: 35px;
+  color: #FBF4E4;
+  margin: 0 20px;
+  padding: 5px 20px;
+}
+.info-list__category.info {
+  background-color: #68D2E3;
+}
+
+@media screen and (min-width: 1024px) {
+  .info-list__category {
+    width: 195px;
+    height: 60px;
+    font-size: 1.3rem;
+    display: inherit;
+    justify-content: center;
+  }
+  
+.info-list__day-red {
+  font-size: 1.5rem;
+}
+.info-list__day-blue {
+  font-size: 1.5rem;
+}
+}
+
+
+.pagenation__list {
+  text-align: center;
+  padding-top: 20px;
+}
+.pagenation__list li {
+  display: inline-block;
+}
+.pagenation__list li a {
+  color: #707070;
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 1024px)  {
+.pagenation__list {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 1.9rem;
+}
+.pagenation__list li {
+  display: inline-block;
+}
+.pagenation__list li a {
+  color: #707070;
+  font-weight: bold;
+  padding-right: 20px;
+  font-size: 1.3rem;
+}
+}

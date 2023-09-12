@@ -1,0 +1,237 @@
+/* header */
+#Nav {
+  display: flex;
+  align-items: center;
+  min-height: 8vh;
+  height: 150px;
+  justify-content: center;
+  background-color: white;
+}
+.header__nav__pc {
+  display: none;
+}
+.header__nav__sp {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  padding: 100px 40px 60px 15px;
+  background-color: #93C178;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 99;
+  color: white;
+}
+.header__nav__sp li a {
+  color: white;
+}
+.header__nav__sp.active {
+  visibility: initial;
+  opacity: 0.9;
+  pointer-events: auto;
+  top: 0;
+  height: auto;
+  transition: 0.5s;
+  width: auto;
+  line-height: 60px;
+} 
+@media screen and (min-width: 1024px) {
+  .header__nav__pc {
+    display: block;
+  }
+  .header__nav__sp {
+    display: none;
+  }
+  .header__nav__pc {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    gap: min(50px, calc((200 / 1980 ) * 100vw));
+  }
+  .header__nav__pc li a {
+    color: #707070;
+  }
+}
+
+
+.keyvisual__top {
+  height: 380px;
+  background-image: url(../img/qa_img/qa-keyvisual_sp.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .keyvisual__top {
+    height: 380px;
+    background-image: url(../img/qa_img/qa_keyvisual.jpg);
+    background-repeat: no-repeat;
+  }
+}
+.inquiry__txtbox {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.qanda-form {
+  padding: 80px 0 25px 25px;
+  text-align: left;
+}
+.qanda-form p {
+  padding-top: 40px;
+}
+.qanda-form input[type="text"],
+.qanda-form input[type="email"],
+.qanda-form input select,
+.qanda-form input textarea {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border: solid 1px #707070;
+}
+.qanda-form textarea {
+  width: 100%;
+  height: 190px;
+}
+.qanda-form p label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* qanda */
+hgroup h4 {
+  color: #93c178;
+}
+.sec-qanda {
+  margin: auto;
+}
+.sec-qanda__h2 {
+  text-align: center;
+  padding-top: 60px;
+}
+.common-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #93c178;
+}
+.common-border:before,
+.common-border:after {
+  border-top: 2px solid;
+  content: "";
+  width: 3em;
+  background-color: #707070;
+}
+.common-border:before {
+  margin-right: 1em;
+}
+.common-border:after {
+  margin-left: 1em;
+}
+
+/* qanda */
+.menu_index {
+  width: 320px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  border-bottom:1px solid;
+  margin: auto;
+}
+
+.toggle_btn {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+}
+
+.toggle_btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #707070;
+  transform: .2s;
+}
+
+.active .toggle_btn::before {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+.toggle_btn::after { /* +ボタン */
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #707070;
+  transform: rotate(90deg);
+  transform: 2s;
+}
+
+.active .toggle_btn::after {
+  transform: rotate(0deg);
+}
+
+.sec-qanda__list {
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+.menu_container {
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.3s, max-height 0.7s;
+  margin: auto;
+  opacity: 0;
+  max-height: 0px;
+  overflow: hidden;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.active + .menu_container {
+  opacity: 1;
+  max-height: 150px;
+  max-width: 500px;
+}
+.menu_container li {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Q&A */
+.menu_index::before {
+  color: #93C178;
+  content: "Q";
+}
+.menu_container::before {
+  color: #E37968;
+  content: "A";
+}
+
+
+@media screen and (min-width: 1024px) {
+  .menu_index {
+    width: 860px;
+  }
+  .menu_containe {
+    width: 860px;
+  }
+
+}

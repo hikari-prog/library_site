@@ -1,0 +1,13 @@
+.keyvisual__top {
+  height: 380px;
+  background-image: url(../img/search.img/search-keyvisual_sp.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .keyvisual__top {
+    height: 380px;
+    background-image: url(../img/info_img/search-keyvisual.jpg);
+    background-repeat: no-repeat;
+  }
+}

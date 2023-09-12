@@ -1,0 +1,329 @@
+/* key-visual */
+.keyvisual__top {
+  height: 380px;
+  background-image: url(../img/about_img/about_keyvisual_sp.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media screen and (min-width: 1024px) {
+  .keyvisual__top {
+    height: 380px;
+    background-image: url(../img/about_img/about_keyvisual.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+/* about */
+.sec-about,.sec-place {
+  text-align: center;
+  padding-top: 30px;
+}
+.sec-about__h2 {
+  text-align: center;
+  padding-top: 60px;
+}
+.sec-open__inner {
+  padding-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.sec-about .sec-about__pic {
+  padding-top: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.sec-about p {
+  width: 260px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+}
+.sec-about__pic img::nth-of-type(2) {
+  display: none;
+}
+.sec-about__pic::nth-of-type(2) {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .sec-about p {
+    width: auto;
+  }
+}
+
+/* place */
+.sec-about__h2 {
+  text-align: center;
+  padding-top: 60px;
+}
+.sec-place__title {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+}
+.circle {
+  padding-top: 60px;
+}
+.circle span  {
+  display: inline-block;
+  height:50px;
+  width:50px;
+  border-radius:50%;
+  line-height:50px;
+  text-align:center;
+  background-color: #465C8B;
+  color: #F7EF6A;
+}
+.sec-place__img-pc {
+  display: none;
+}
+.sec-place p {
+  text-align: center;
+  width: 210px;
+  margin: 0 auto;
+}
+.sec-place__img {
+  display: inline-block;
+  margin:0 auto;
+  padding-top: 30px;
+}
+.sec-place__img p {
+  text-align: center;
+  width: 260px;
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  .sec-place__img-sp {
+    display: none;
+  }
+  .sec-place__img-pc {
+    display: block;
+  }
+  .sec-place__img p {
+    width: 710px;
+  }
+  .sec-place img {
+    width: 800px;
+    height: 400px;
+  }
+}
+
+/* guide */
+.sec-guide__h2 {
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 80px;
+}
+.inner {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 85%;
+  min-width: 85%;
+  padding: 0;
+  text-align: center;
+}
+.sec-guide__list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 57px;
+  align-items: center;
+  justify-content: center;
+}
+.sec-guide__list-1 {
+  display: grid;
+  gap: 80px;
+  justify-content: center;
+  padding: 0;
+}
+.sec-guide__list-2  {
+  display: grid;
+  gap: 80px;
+  justify-content: center;
+  padding: 0;
+}
+.sec-guide__item--tit-01::before {
+  content: '';
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background-image: url("../img/about_img/book-icn.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -55px;
+  left: 35%;
+}
+.sec-guide__item--tit-02::before {
+  content: '';
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background-image: url("../img/about_img/search-icn.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -60px;
+  left: 35%;
+}
+.sec-guide__item--tit-03::before {
+  content: '';
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background-image: url("../img/about_img/return-icn.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -60px;
+  left: 35%;
+}
+.sec-guide__item--tit-04::before {
+  content: '';
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background-image: url("../img/about_img/star-icn.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -60px;
+  left: 35%;
+}
+.sec-guide__item--tit-01,
+.sec-guide__item--tit-02,
+.sec-guide__item--tit-03,
+.sec-guide__item--tit-04 {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  border-bottom: 1px solid #48515e;
+}
+
+.sec-guide__item--date {
+  padding: 31px 23px 19px;
+  border-radius: 40px;
+  background-color: white;
+  margin-bottom: 80px;
+  position: relative;
+}
+.sec-guide__item--txt {
+  line-height: 2.5rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .inner {
+    max-width: 850px;
+  }
+  .sec-guide__list-1  {
+    display: flex;
+    gap: 90px;
+  }
+  .sec-guide__list-2  {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+  }
+  .sec-guide__item--date {
+    padding: 80px 55px 23px;
+    margin-bottom: 80px;
+    height: 350px;
+    aspect-ratio: 1 / 1;
+  }
+  .sec-guide__item--tit-01::before {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/about_img/book-icn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -55px;
+    left: 35%;
+  }
+  .sec-guide__item--tit-02::before {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/about_img/search-icn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -60px;
+    left: 35%;
+  }
+  .sec-guide__item--tit-03::before {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/about_img/return-icn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -60px;
+    left: 35%;
+  }
+  .sec-guide__item--tit-04::before {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/about_img/star-icn.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -60px;
+    left: 35%;
+  }
+}
+
+.sec-open {
+  text-align: center;
+  padding-top: 30px;
+}
+.sec-open__h2 {
+  text-align: center;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+  .sec-open__explanation, 
+  p {
+    line-height: 4em;
+    padding-top: 30px;
+  }
+}
+.sec-access {
+  padding-top: 30px;
+}
+.sec-access__h2 {
+  text-align: center;
+  padding-top: 60px;
+}
+.sec-access__map {
+  height: 330px;
+}
+.sec-access__map iframe {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+}
+@media screen and (min-width: 1024px) {
+  .sec-access__map {
+    height: 890px;
+    width: 1300px;
+    margin: auto;
+  }
+}
+
